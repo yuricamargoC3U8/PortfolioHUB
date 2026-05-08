@@ -101,6 +101,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](./LI
 **Yuri Camargo**  
 GitHub: [@yuricamargoC3U8](https://github.com/yuricamargoC3U8)  
 LinkedIn: [Yuri Goelzer de Camargo](https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true)
+
 [Portfólio: ](https://sites.google.com/view/siteparaconsultaprofissional/in%C3%ADcio)
 
 ---
