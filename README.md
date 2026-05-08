@@ -83,7 +83,7 @@ Acesse: [https://yuricamargoc3u8.github.io/Projetos/](https://yuricamargoc3u8.gi
 
 ## 🌐 Recursos
 
-- 🔗 [Portfólio Online](https://yuricamargoc3u8.github.io/Projetos/)
+- 🔗 [Site Do Repositório](https://yuricamargoc3u8.github.io/Projetos/)
 - 📚 [Documentação](./docs/)
 - 🎓 [Projetos Acadêmicos](./projetos-academicos/)
 - 💼 [LinkedIn](https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true)
@@ -105,5 +105,3 @@ LinkedIn: [Yuri Goelzer de Camargo](https://www.linkedin.com/in/yuri-goelzer-de-
 [Portfólio: ](https://sites.google.com/view/siteparaconsultaprofissional/in%C3%ADcio)
 
 ---
-
-Desenvolvido com ❤️
