@@ -26,7 +26,7 @@ Projetos/
 
 ---
 
-## 🎓 Meus Projetos Acadêmicos
+##  Meus Projetos Acadêmicos
 
 ### Provas Práticas
 - **[PP1](./projetos-academicos/PP1/)** - Primeira Prova Prática
