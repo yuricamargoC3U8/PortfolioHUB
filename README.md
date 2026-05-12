@@ -1,16 +1,16 @@
-# 📚 Projetos
+#  Projetos
 
 Repositório onde armazeno meus projetos escolares e pessoais.
 
 ---
 
-## 📖 Sobre
+##  Sobre
 
 Este repositório contém uma coleção de meus projetos acadêmicos e pessoais desenvolvidos durante minha jornada de aprendizado em programação. Aqui você encontrará desde desafios de bootcamp até projetos independentes, com foco em versionamento, colaboração e boas práticas de desenvolvimento.
 
 ---
 
-## 📁 Estrutura do Repositório
+##  Estrutura do Repositório
 
 ```
 Projetos/
@@ -26,7 +26,7 @@ Projetos/
 
 ---
 
-## 🎓 Meus Projetos Acadêmicos
+##  Meus Projetos Acadêmicos
 
 ### Provas Práticas
 - **[PP1](./projetos-academicos/PP1/)** - Primeira Prova Prática
@@ -47,7 +47,7 @@ Projetos/
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - **Python** - Linguagem principal do repositório
 - **Git & GitHub** - Versionamento e controle de código
@@ -56,7 +56,7 @@ Projetos/
 
 ---
 
-## 🚀 Como Começar
+##  Como Começar
 
 ### Clonar o Repositório
 
@@ -81,22 +81,22 @@ Acesse: [https://yuricamargoc3u8.github.io/Projetos/](https://yuricamargoc3u8.gi
 
 ---
 
-## 🌐 Recursos
+##  Recursos
 
-- 🔗 [Site Do Repositório](https://yuricamargoc3u8.github.io/Projetos/)
-- 📚 [Documentação](./docs/)
-- 🎓 [Projetos Acadêmicos](./projetos-academicos/)
-- 💼 [LinkedIn](https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true)
+-  [Site Do Repositório](https://yuricamargoc3u8.github.io/Projetos/)
+-  [Documentação](./docs/)
+-  [Projetos Acadêmicos](./projetos-academicos/)
+-  [LinkedIn](https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true)
 
 ---
 
-## 📋 Licença
+##  Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
 ---
 
-## 👤 Autor
+##  Autor
 
 **Yuri Camargo**  
 GitHub: [@yuricamargoC3U8](https://github.com/yuricamargoC3U8)  
