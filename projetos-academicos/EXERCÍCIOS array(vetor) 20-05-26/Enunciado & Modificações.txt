@@ -1,0 +1,16 @@
+(Array1, 2, 3...)
+- Implemente um programa com os conceitos de lista (array) e resolva este problemas na sequencia num unico programa .py.
+
+-- Modificações --
+a. crie uma lista vazia;
+b. Leia varios numeros digittados pelo usuário e os amazene na lista. use repetição;
+c. Mostre a lista na horizontal;
+d. Mostre a lista na vertical;
+e. Mostre a quantidade de elementos armazenados na lista, não use contador;
+f. Mostre  soma dos vlaores da lista, não use somador;
+g. Mostre o maior valor da lista;
+h. Mostre o menor valor da lista;
+i. Faça uma pesquisa. Leia um valor digitado pelo usuário e verificar se ele está na lista;
+j. No item anterior (i), mostre também a posição (índice) do valor encontrado;
+k. Mostre a lista em ordem crecente. (list.sort());
+l. Insira (acrescente) o valor 33 na posição (índice) 1 da lista;

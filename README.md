@@ -37,7 +37,7 @@ Projetos/
 - **[PP6](./projetos-academicos/PP6/)** - Sexta Prova Prática
 
 ### Revisão e Correção
-- **[CorreçãoProvaReal](./projetos-academicos/CorreçãoProvaReal/)** - Revisão de provas e correções
+- **[CorreçãoProvaReal](projetos-academicos/CorreçãoProvaReal1/)** - Revisão de provas e correções
 
 ### Listas de Exercícios
 - **[EXERCÍCIOS if & else pt.1](./projetos-academicos/EXERC%C3%8DCIOS%20if%20%26%20else%20pt.1%2004-03-26/)** - Estruturas condicionais (Parte 1)
