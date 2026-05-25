@@ -1,63 +1,63 @@
-#  Projetos
+# 🚀 Meus Projetos
 
-Repositório onde armazeno meus projetos escolares e pessoais.
-
----
-
-##  Sobre
-
-Este repositório contém uma coleção de meus projetos acadêmicos e pessoais desenvolvidos durante minha jornada de aprendizado em programação. Aqui você encontrará desde desafios de bootcamp[...]
+Repositório onde eu armazeno meus projetos escolares e pessoais, organizados por linguagem de programação.
 
 ---
 
-##  Estrutura do Repositório
+## 📋 Sobre
+
+Este repositório contém uma coleção organizada de meus projetos acadêmicos e pessoais. Os projetos estão divididos em categorias por linguagem, facilitando a navegação e compreensão da evolução do meu aprendizado em programação.
+
+---
+
+## 📂 Estrutura do Repositório
 
 ```
 Projetos/
-├── projetos-academicos/    # Projetos desenvolvidos durante cursos e bootcamps
-│   ├── PP1/ ... PP6/       # Provas Práticas (1 a 6)
-│   ├── CorreçãoProvaReal/  # Revisão e correção de provas
-│   └── EXERCÍCIOS .../     # Listas de exercícios por tópico
-├── docs/                   # Documentação adicional
-├── README.md              # Este arquivo
-├── LICENSE                # Licença MIT
-└── index.html             # Página inicial do portfólio
+├── projetos-academicos/
+│   ├── Python Projects/        # Projetos em Python (Provas, Exercícios, Revisões)
+│   ├── Golang Projects/        # Projetos em Go
+│   └── .gitkeep
+├── docs/                       # Documentação adicional
+├── README.md                   # Este arquivo
+├── LICENSE                     # Licença MIT
+└── index.html                  # Página inicial do portfólio
 ```
 
 ---
 
-##  Meus Projetos Acadêmicos
+## 🐍 Projetos Python
 
-### Provas Práticas
-- **[PP1](./projetos-academicos/PP1/)** - Primeira Prova Prática
-- **[PP2](./projetos-academicos/PP2/)** - Segunda Prova Prática
-- **[PP3](./projetos-academicos/PP3/)** - Terceira Prova Prática
-- **[PP4](./projetos-academicos/PP4%2028-04/)** - Quarta Prova Prática
-- **[PP5](./projetos-academicos/PP5/)** - Quinta Prova Prática
-- **[PP6](projetos-academicos/Python Projects/PP6/)** - Sexta Prova Prática
+Todos os projetos em Python estão organizados em:
 
-### Revisão e Correção
-- **[CorreçãoProvaReal](projetos-academicos/CorreçãoProvaReal1/)** - Revisão de provas e correções
+📁 **[Python Projects](./projetos-academicos/Python%20Projects/)**
 
-### Listas de Exercícios
-- **[EXERCÍCIOS if & else pt.1](./projetos-academicos/EXERC%C3%8DCIOS%20if%20%26%20else%20pt.1%2004-03-26/)** - Estruturas condicionais (Parte 1)
-- **[EXERCÍCIOS if & else pt.2](./projetos-academicos/EXERC%C3%8DCIOS%20if%20%26%20else%20pt.2%2011-03/)** - Estruturas condicionais (Parte 2)
-- **[EXERCÍCIOS whileTrue SALA](./projetos-academicos/EXERC%C3%8DCIOS%20whileTrue%20SALA%2025-03-26/)** - Loops e estruturas repetitivas
-- **[EXERCÍCIOS def SALA](./projetos-academicos/EXERC%C3%8DCIOS%20def%20SALA%2029-04-26/)** - Funções e definições (29-04-26)
-- **[EXERCÍCIOS def SALA](./projetos-academicos/EXERC%C3%8DCIOS%20def%20SALA%2006-05-26/)** - Funções e definições (06-05-26)
+Incluem:
+- **Provas Práticas** (PP1 a PP6) - Avaliações de conhecimento
+- **Listas de Exercícios** - Exercícios práticos de conceitos
+- **Revisões e Correções** - Análise e otimização de soluções
 
 ---
 
-##  Tecnologias
+## 🔵 Projetos Golang
 
-- **Python** - Linguagem principal do repositório
-- **Git & GitHub** - Versionamento e controle de código
-- **HTML** - Criação de páginas web
-- **GitHub Pages** - Hospedagem estática de projetos
+Todos os projetos em Go estão organizados em:
+
+📁 **[Golang Projects](./projetos-academicos/Golang%20Projects/)**
 
 ---
 
-##  Como Começar
+## 💻 Tecnologias Utilizadas
+
+- **Python** - Linguagem principal (57.3% do repositório)
+- **HTML** - Markup e páginas web (41.4%)
+- **Go (Golang)** - Programação de sistemas (1.3%)
+- **Git & GitHub** - Controle de versão
+- **GitHub Pages** - Hospedagem do portfólio
+
+---
+
+## 🚀 Como Começar
 
 ### Clonar o Repositório
 
@@ -69,39 +69,42 @@ cd Projetos
 ### Explorar os Projetos
 
 ```bash
-# Navegue para a pasta de projetos acadêmicos
-cd projetos-academicos
+# Acessar projetos em Python
+cd projetos-academicos/Python\ Projects/
 
-# Lista os arquivos
-ls -la
+# Acessar projetos em Go
+cd projetos-academicos/Golang\ Projects/
 ```
 
-### Visualizar a Página do Portfólio
+### Visualizar o Portfólio
 
 Acesse: [https://yuricamargoc3u8.github.io/Projetos/](https://yuricamargoc3u8.github.io/Projetos/)
 
 ---
 
-##  Recursos
+## 🔗 Links Úteis
 
--  [Site Do Repositório](https://yuricamargoc3u8.github.io/Projetos/)
--  [Documentação](./docs/)
--  [Projetos Acadêmicos](./projetos-academicos/)
--  [LinkedIn](https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true)
+- 🌐 [Portfólio Web](https://yuricamargoc3u8.github.io/Projetos/)
+- 🐙 [GitHub](https://github.com/yuricamargoC3U8)
+- 💼 [LinkedIn](https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true)
+- 📑 [Portfólio Profissional](https://sites.google.com/view/siteparaconsultaprofissional/início)
 
 ---
 
-##  Licença
+## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
 ---
 
-##  Autor
+## 👨‍💻 Autor
 
-**Yuri Camargo**  
-GitHub: [@yuricamargoC3U8](https://github.com/yuricamargoC3U8)  
-LinkedIn: [Yuri Goelzer de Camargo](https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true)  
-[Portfólio](https://sites.google.com/view/siteparaconsultaprofissional/in%C3%ADcio)  
+**Yuri Camargo**
+
+- 🐙 GitHub: [@yuricamargoC3U8](https://github.com/yuricamargoC3U8)
+- 💼 LinkedIn: [Yuri Goelzer de Camargo](https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true)
+- 🌐 Portfólio: [Link](https://sites.google.com/view/siteparaconsultaprofissional/início)
 
 ---
+
+**Última atualização:** Maio de 2026
