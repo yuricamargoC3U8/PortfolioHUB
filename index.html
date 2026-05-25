@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Projetos Acadêmicos e Pessoais de Yuri Camargo">
+    <meta name="description" content="Portfólio de Projetos Acadêmicos e Pessoais - Yuri Camargo">
     <meta http-equiv="cache-control" content="max-age=0, no-cache, no-store, must-revalidate">
-    <title>Portfólio - Yuri Camargo | Projetos Acadêmicos e Pessoais</title>
+    <title>Portfólio | Yuri Camargo - Projetos em Python, Go e Web</title>
     <style>
         * {
             margin: 0;
@@ -13,161 +13,305 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --primary: #3b82f6;
+            --primary-dark: #1e40af;
+            --primary-light: #60a5fa;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-light: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #cbd5e1;
+            --border: #475569;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a2f4a 100%);
+            color: var(--text-primary);
             line-height: 1.6;
-            color: #d0d0d0;
-            background: #0a0a0a !important;
             min-height: 100vh;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 0 20px;
         }
 
+        /* ===== HEADER ===== */
         header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
-            border-radius: 10px;
-            padding: 40px 30px;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            padding: 80px 0 60px;
             text-align: center;
-            border: 1px solid #333;
+            background: linear-gradient(180deg, rgba(59, 130, 246, 0.1) 0%, transparent 100%);
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 60px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         h1 {
-            color: #4a9eff;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
         }
 
         .subtitle {
-            color: #999;
-            font-size: 1.1em;
-            margin-bottom: 20px;
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
         }
 
-        .description {
-            color: #b0b0b0;
-            font-size: 1em;
-            margin-bottom: 20px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            font-weight: 500;
+            margin-bottom: 30px;
         }
 
         .nav-buttons {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 30px;
+            animation: fadeIn 0.8s ease-out 0.2s both;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: #4a9eff;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease, transform 0.2s ease;
+            padding: 14px 32px;
+            font-size: 1rem;
             font-weight: 600;
             border: none;
+            border-radius: 8px;
             cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
         }
 
-        .btn:hover {
-            background: #2a7edd;
-            transform: translateY(-2px);
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            border: 2px solid var(--primary);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.5);
         }
 
         .btn-secondary {
-            background: #4a2a6b !important;
-            color: #ffffff !important;
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--secondary);
         }
 
         .btn-secondary:hover {
-            background: #5a3a7b !important;
+            background: var(--secondary);
+            transform: translateY(-3px);
         }
 
+        /* ===== SECTIONS ===== */
         section {
-            background: #1a1a1a;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-            border: 1px solid #333;
+            margin-bottom: 80px;
+            animation: fadeIn 0.8s ease-out;
         }
 
         h2 {
-            color: #ffffff !important;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-            border-bottom: 3px solid #4a9eff;
-            padding-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2::before {
+            content: '';
+            width: 5px;
+            height: 40px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary));
+            border-radius: 10px;
         }
 
         h3 {
-            color: #4a9eff !important;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 1.2em;
+            font-size: 1.5rem;
+            margin: 35px 0 25px 0;
+            color: var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        h3:first-child {
-            margin-top: 0;
+        /* ===== ABOUT SECTION ===== */
+        #about {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.5) 100%);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
         }
 
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .about-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+            border: 2px solid var(--border);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ===== PROJECTS SECTION ===== */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
         }
 
         .project-card {
-            background: #252525;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 5px solid #4a9eff;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.4) 100%);
+            border: 2px solid var(--border);
+            border-left: 5px solid var(--primary);
+            padding: 30px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(74, 158, 255, 0.3);
+            transform: translateY(-8px);
+            border-color: var(--primary-light);
+            box-shadow: 0 20px 50px rgba(59, 130, 246, 0.3);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 41, 59, 0.5) 100%);
+        }
+
+        .project-card.python {
+            border-left-color: #3776ab;
+        }
+
+        .project-card.golang {
+            border-left-color: #00add8;
+        }
+
+        .project-card.web {
+            border-left-color: #f59e0b;
+        }
+
+        .project-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
         .project-card h4 {
-            color: #4a9eff;
-            margin-bottom: 10px;
-            font-size: 1.1em;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: var(--text-primary);
         }
 
         .project-card p {
-            color: #b0b0b0;
-            font-size: 0.95em;
-            line-height: 1.5;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            flex-grow: 1;
+            line-height: 1.6;
         }
 
         .project-link {
-            display: inline-block;
-            margin-top: 10px;
-            color: #4a9eff;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-light);
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            width: fit-content;
         }
 
         .project-link:hover {
-            color: #2a7edd;
-            text-decoration: underline;
+            gap: 12px;
+            color: var(--secondary);
         }
 
-        .tech-list {
+        .tech-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -175,91 +319,147 @@
         }
 
         .tech-tag {
-            background: #2a2a2a;
-            color: #4a9eff;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+            color: var(--primary-light);
             padding: 6px 14px;
             border-radius: 20px;
-            font-size: 0.85em;
-            border: 1px solid #4a9eff;
+            font-size: 0.85rem;
+            border: 1px solid var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        footer {
-            background: #1a1a1a;
+        /* ===== CATEGORY SECTIONS ===== */
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+        }
+
+        .category-header h3 {
+            margin: 0;
+            flex: 1;
+        }
+
+        .category-header p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* ===== TECH STACK SECTION ===== */
+        #tecnologias {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.5) 0%, rgba(15, 23, 42, 0.5) 100%);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .tech-item {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+            border: 2px solid var(--border);
+            padding: 20px;
             border-radius: 10px;
-            padding: 30px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-            border: 1px solid #333;
+            transition: all 0.3s ease;
         }
 
-        footer p {
-            color: #999;
+        .tech-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+        }
+
+        .tech-item-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .tech-item-name {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, var(--bg-dark) 100%);
+            border-top: 2px solid var(--border);
+            padding: 50px 0 30px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            margin-bottom: 30px;
+        }
+
+        .footer-content p {
+            color: var(--text-secondary);
             margin-bottom: 15px;
         }
 
         .social-links {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
         }
 
         .social-links a {
-            color: #4a9eff;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);
+            color: var(--primary-light);
             text-decoration: none;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.3s ease;
             font-weight: 600;
-            transition: color 0.3s ease;
         }
 
         .social-links a:hover {
-            color: #2a7edd;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
         }
 
-        .about-content {
-            color: #b0b0b0;
-            line-height: 1.8;
+        .footer-bottom {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
         }
 
-        .about-content p {
-            margin-bottom: 15px;
-        }
-
-        .about-content strong {
-            color: #4a9eff;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .stat-card {
-            background: #252525;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #4a9eff;
-            text-align: center;
-        }
-
-        .stat-number {
-            color: #4a9eff;
-            font-size: 1.8em;
-            font-weight: bold;
-        }
-
-        .stat-label {
-            color: #999;
-            font-size: 0.9em;
-            margin-top: 5px;
-        }
-
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2em;
+                font-size: 2.5rem;
             }
 
-            .projects-grid {
+            h2 {
+                font-size: 2rem;
+            }
+
+            .about-content {
                 grid-template-columns: 1fr;
             }
 
@@ -269,199 +469,247 @@
 
             .btn {
                 width: 100%;
-                text-align: center;
+                justify-content: center;
             }
 
-            .stats {
-                grid-template-columns: 1fr 1fr;
+            #about {
+                padding: 30px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            header {
+                padding: 40px 0 30px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- HEADER -->
         <header>
             <h1>Portfólio de Projetos</h1>
             <p class="subtitle">Yuri Camargo</p>
-            <p class="description">Repositório onde armazeno meus projetos escolares e pessoais</p>
+            <p class="tagline">🚀 Desenvolvedor em formação | Python • Go • Web</p>
             <div class="nav-buttons">
-                <a href="https://github.com/yuricamargoC3U8/Projetos" class="btn">🐙 Ver no GitHub</a>
-                <a href="https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true" class="btn btn-secondary">💼 LinkedIn</a>
+                <a href="https://github.com/yuricamargoC3U8/Projetos" class="btn btn-primary">
+                    🐙 Ver no GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true" class="btn btn-secondary">
+                    💼 Conectar no LinkedIn
+                </a>
             </div>
         </header>
 
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>👋 Sobre Mim</h2>
             <div class="about-content">
-                <p>Olá! Eu sou <strong>Yuri Camargo</strong>, um estudante apaixonado por programação e desenvolvimento de software. Este portfólio apresenta meus projetos acadêmicos e pessoais, desenvolvidos durante minha jornada de aprendizado.</p>
-                <p>Atualmente estou aprendendo <strong>Python</strong> e as melhores práticas de desenvolvimento com <strong>Git e GitHub</strong>. Tenho interesse em desenvolver aplicações robustas e bem estruturadas, sempre focando na qualidade do código e em boas práticas de engenharia de software.</p>
-                <p>Neste repositório, você encontrará desde desafios de bootcamp até exercícios práticos e projetos pessoais, todos refletindo meu compromisso com o aprendizado contínuo.</p>
+                <div>
+                    <p>Olá! Sou <strong>Yuri Camargo</strong>, um estudante apaixonado por programação e desenvolvimento de software. Este portfólio apresenta meus projetos acadêmicos e pessoais, refletindo minha evolução como desenvolvedor.</p>
+                    <p>Tenho foco especial em <strong>Python</strong> para desenvolvimento backend e lógica de programação, além de estar explorando <strong>Go</strong> para sistemas mais eficientes.</p>
+                </div>
+                <div>
+                    <p>Neste repositório você encontra desde desafios de bootcamp até exercícios práticos, todas refletindo meu compromisso com o aprendizado contínuo e melhorias constantes.</p>
+                    <p>Sempre buscando boas práticas, padrões de código limpo e colaboração em projetos. Vamos construir algo incrível juntos! 🚀</p>
+                </div>
             </div>
-            <div class="stats">
+
+            <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-number">12+</div>
+                    <div class="stat-number">20+</div>
                     <div class="stat-label">Projetos</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">61.9%</div>
+                    <div class="stat-number">57.3%</div>
                     <div class="stat-label">Python</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">38.1%</div>
+                    <div class="stat-number">41.4%</div>
                     <div class="stat-label">HTML/CSS</div>
                 </div>
+                <div class="stat-card">
+                    <div class="stat-number">1.3%</div>
+                    <div class="stat-label">Golang</div>
+                </div>
             </div>
         </section>
 
-        <section id="projetos-academicos">
-            <h2>Projetos Acadêmicos</h2>
-            
-            <h3>📝 Provas Práticas</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>PP1 - Primeira Prova Prática</h4>
-                    <p>Conceitos fundamentais de programação em Python. Introdução a variáveis, tipos de dados e operações básicas.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP1" class="project-link">Ver Projeto →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h4>PP2 - Segunda Prova Prática</h4>
-                    <p>Aprofundamento em estruturas de dados e lógica de programação. Strings, listas e operações.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP2" class="project-link">Ver Projeto →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h4>PP3 - Terceira Prova Prática</h4>
-                    <p>Desenvolvimento de algoritmos mais complexos e manipulação avançada de estruturas de dados.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP3" class="project-link">Ver Projeto →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h4>PP4 - Quarta Prova Prática</h4>
-                    <p>Consolidação de conhecimentos do semestre. Aplicação prática de conceitos avançados (28-04-26).</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP4%2028-04" class="project-link">Ver Projeto →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h4>PP5 - Quinta Prova Prática</h4>
-                    <p>Avaliação final de competências desenvolvidas. Integração de todos os conceitos aprendidos.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP5" class="project-link">Ver Projeto →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h4>PP6 - Sexta Prova Prática</h4>
-                    <p>Avaliação adicional com foco em resolução de problemas reais e aplicação prática de conhecimentos.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/PP6" class="project-link">Ver Projeto →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                    </div>
+        <!-- PYTHON PROJECTS -->
+        <section id="python-projects">
+            <h2>🐍 Projetos em Python</h2>
+            <div class="category-header">
+                <div class="category-icon">🐍</div>
+                <div>
+                    <h3 style="margin: 0;">Projetos Python</h3>
+                    <p>Desenvolvidos durante minha trajetória de aprendizado em programação</p>
                 </div>
             </div>
 
-            <h3>💪 Listas de Exercícios</h3>
             <div class="projects-grid">
-                <div class="project-card">
-                    <h4>if & else - Parte 1</h4>
-                    <p>Primeira parte de exercícios sobre estruturas condicionais. Fundamentos essenciais de lógica.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20if%20%26%20else%20pt.1%2004-03-26" class="project-link">Ver Exercícios →</a>
-                    <div class="tech-list">
+                <div class="project-card python">
+                    <div class="project-icon">📝</div>
+                    <h4>Provas Práticas (PP1-PP6)</h4>
+                    <p>Série de 6 provas práticas cobrindo conceitos fundamentais até avançados em Python. Includes variáveis, estruturas de dados, funções e algoritmos.</p>
+                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/Python%20Projects" class="project-link">
+                        Explorar → 
+                    </a>
+                    <div class="tech-tags">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Condicionais</span>
+                        <span class="tech-tag">Algoritmos</span>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h4>if & else - Parte 2</h4>
-                    <p>Segunda parte com casos mais avançados e combinações de estruturas condicionais.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20if%20%26%20else%20pt.2%2011-03" class="project-link">Ver Exercícios →</a>
-                    <div class="tech-list">
+                <div class="project-card python">
+                    <div class="project-icon">💪</div>
+                    <h4>Listas de Exercícios</h4>
+                    <p>Exercícios práticos organizados por tópicos: condicionais (if/else), loops (while), funções (def) e estruturas de dados. Prática contínua de programação.</p>
+                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/Python%20Projects" class="project-link">
+                        Explorar →
+                    </a>
+                    <div class="tech-tags">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Condicionais</span>
+                        <span class="tech-tag">Exercícios</span>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h4>while True - Sala</h4>
-                    <p>Exercícios sobre loops e estruturas repetitivas com while. Prática em sala de aula.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20whileTrue%20SALA%2025-03-26" class="project-link">Ver Exercícios →</a>
-                    <div class="tech-list">
+                <div class="project-card python">
+                    <div class="project-icon">✅</div>
+                    <h4>Revisões e Correções</h4>
+                    <p>Análise detalhada de soluções, correção de erros e otimização de código. Aprendizado através da revisão e melhoria de implementações anteriores.</p>
+                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/Python%20Projects" class="project-link">
+                        Explorar →
+                    </a>
+                    <div class="tech-tags">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Loops</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h4>def SALA - 29-04-26</h4>
-                    <p>Exercícios sobre definição e uso de funções. Prática em sala com exemplos práticos.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20def%20SALA%2029-04-26" class="project-link">Ver Exercícios →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Funções</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h4>def SALA - 06-05-26</h4>
-                    <p>Exercícios sobre funções com maior complexidade. Prática avançada e casos de uso reais.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/EXERC%C3%8DCIOS%20def%20SALA%2006-05-26" class="project-link">Ver Exercícios →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Funções</span>
-                    </div>
-                </div>
-            </div>
-
-            <h3>✅ Revisões e Correções</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>Correção de Prova Real</h4>
-                    <p>Revisão e correção de provas reais aplicadas em sala. Análise detalhada de erros e soluções otimizadas.</p>
-                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/CorreçãoProvaReal" class="project-link">Ver Correções →</a>
-                    <div class="tech-list">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Revisão</span>
+                        <span class="tech-tag">Code Review</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- GOLANG PROJECTS -->
+        <section id="golang-projects">
+            <h2>🔵 Projetos em Golang</h2>
+            <div class="category-header">
+                <div class="category-icon">🔵</div>
+                <div>
+                    <h3 style="margin: 0;">Projetos Golang</h3>
+                    <p>Explorando Go para desenvolvimento de sistemas eficientes</p>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card golang">
+                    <div class="project-icon">⚡</div>
+                    <h4>Projetos Go</h4>
+                    <p>Iniciando exploração de Go para programação de sistemas. Aprendendo goroutines, channels e o ecosistema da linguagem para aplicações de alta performance.</p>
+                    <a href="https://github.com/yuricamargoC3U8/Projetos/tree/main/projetos-academicos/Golang%20Projects" class="project-link">
+                        Explorar →
+                    </a>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Golang</span>
+                        <span class="tech-tag">Sistemas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WEB PROJECTS -->
+        <section id="web-projects">
+            <h2>🌐 Projetos Web</h2>
+            <div class="category-header">
+                <div class="category-icon">🌐</div>
+                <div>
+                    <h3 style="margin: 0;">Desenvolvimento Web</h3>
+                    <p>Criação de interfaces e experiências web</p>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card web">
+                    <div class="project-icon">🎨</div>
+                    <h4>Este Portfólio</h4>
+                    <p>Portfólio pessoal criado com HTML, CSS e design moderno. Showcasing de projetos com interface responsiva e animações fluidas.</p>
+                    <a href="https://github.com/yuricamargoC3U8/Projetos" class="project-link">
+                        Explorar →
+                    </a>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGIES SECTION -->
         <section id="tecnologias">
-            <h2>Tecnologias e Ferramentas</h2>
-            <div class="tech-list" style="margin-top: 20px;">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Git</span>
-                <span class="tech-tag">GitHub</span>
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">GitHub Pages</span>
+            <h2>🛠️ Tecnologias e Ferramentas</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <div class="tech-item-icon">🐍</div>
+                    <div class="tech-item-name">Python</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">🔵</div>
+                    <div class="tech-item-name">Golang</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">🌐</div>
+                    <div class="tech-item-name">HTML</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">🎨</div>
+                    <div class="tech-item-name">CSS</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">🐙</div>
+                    <div class="tech-item-name">Git & GitHub</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-item-icon">📄</div>
+                    <div class="tech-item-name">GitHub Pages</div>
+                </div>
             </div>
-            <p style="margin-top: 20px; color: #b0b0b0;">Estou sempre aprendendo e explorando novas tecnologias para expandir meus conhecimentos em desenvolvimento de software. Meu foco está em construir uma base sólida em Python enquanto aprendo sobre versionamento de código e boas práticas de desenvolvimento.</p>
         </section>
+    </div>
 
-        <footer>
-            <p style="font-weight: 600;">Vamos nos conectar!</p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p style="font-weight: 600; font-size: 1.1rem;">Vamos nos conectar! 🚀</p>
+                <p>Estou sempre aberto a novas oportunidades, colaborações e desafios.</p>
+            </div>
+
             <div class="social-links">
                 <a href="https://github.com/yuricamargoC3U8" target="_blank">🐙 GitHub</a>
                 <a href="https://www.linkedin.com/in/yuri-goelzer-de-camargo-466bb13b4/?skipRedirect=true" target="_blank">💼 LinkedIn</a>
                 <a href="https://sites.google.com/view/siteparaconsultaprofissional/início" target="_blank">🌐 Portfólio Profissional</a>
             </div>
-            <p style="margin-top: 20px; font-size: 0.9em;">© 2026 Yuri Camargo | Desenvolvido com HTML, CSS e GitHub Pages | Repositório: <a href="https://github.com/yuricamargoC3U8/Projetos" style="color: #4a9eff; text-decoration: none;">yuricamargoC3U8/Projetos</a></p>
-        </footer>
-    </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Yuri Camargo | Desenvolvido com HTML & CSS | Hospedado em <a href="https://pages.github.com" target="_blank" style="color: var(--primary-light);">GitHub Pages</a></p>
+                <p><a href="https://github.com/yuricamargoC3U8/Projetos" target="_blank" style="color: var(--primary-light);">📦 Repositório Completo</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
