@@ -34,7 +34,7 @@ Projetos/
 - **[PP3](./projetos-academicos/PP3/)** - Terceira Prova Prática
 - **[PP4](./projetos-academicos/PP4%2028-04/)** - Quarta Prova Prática
 - **[PP5](./projetos-academicos/PP5/)** - Quinta Prova Prática
-- **[PP6](./projetos-academicos/PP6/)** - Sexta Prova Prática
+- **[PP6](projetos-academicos/Python Projects/PP6/)** - Sexta Prova Prática
 
 ### Revisão e Correção
 - **[CorreçãoProvaReal](projetos-academicos/CorreçãoProvaReal1/)** - Revisão de provas e correções

@@ -36,5 +36,6 @@ if pesquisa in lista1:
 else:
     print("Valor não encontrado.")
 # Ordem Crescente:
+print("\nA lista em ordem Crescente:  ")
 lista1.sort()
 print(lista1)
