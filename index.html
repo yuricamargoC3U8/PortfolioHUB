@@ -279,6 +279,14 @@
         .project-icon {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .project-icon img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
         }
 
         .project-card h4 {
@@ -343,6 +351,15 @@
 
         .category-icon {
             font-size: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .category-icon img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
         }
 
         .category-header h3 {
@@ -388,6 +405,15 @@
         .tech-item-icon {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tech-item-icon img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
         }
 
         .tech-item-name {
@@ -522,11 +548,11 @@
             <h2>👋 Sobre Mim</h2>
             <div class="about-content">
                 <div>
-                    <p>Olá! Sou <strong>Yuri Camargo</strong>, um estudante apaixonado por programação e desenvolvimento de software. Este portfólio apresenta meus projetos acadêmicos e pessoais, refletindo minha evolução como desenvolvedor.</p>
-                    <p>Tenho foco especial em <strong>Python</strong> para desenvolvimento backend e lógica de programação, além de estar explorando <strong>Go</strong> para sistemas mais eficientes.</p>
+                    <p>Olá! Sou <strong>Yuri Camargo</strong>, um estudante apaixonado por programação e desenvolvimento de software. Este portfólio apresenta meus projetos acadêmicos e pessoais desenvolvidos durante minha trajetória de aprendizado.</p>
+                    <p>Tenho foco especial em <strong>Python</strong> para desenvolvimento backend e lógica de programação, além de estar explorando <strong>Go</strong> para sistemas mais eficientes e de alta performance.</p>
                 </div>
                 <div>
-                    <p>Neste repositório você encontra desde desafios de bootcamp até exercícios práticos, todas refletindo meu compromisso com o aprendizado contínuo e melhorias constantes.</p>
+                    <p>Neste repositório você encontra desde desafios de bootcamp até exercícios práticos, todas refletindo meu compromisso com o aprendizado contínuo e melhorias constantes no código.</p>
                     <p>Sempre buscando boas práticas, padrões de código limpo e colaboração em projetos. Vamos construir algo incrível juntos! 🚀</p>
                 </div>
             </div>
@@ -555,7 +581,9 @@
         <section id="python-projects">
             <h2>🐍 Projetos em Python</h2>
             <div class="category-header">
-                <div class="category-icon">🐍</div>
+                <div class="category-icon">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect fill='%233776ab' width='256' height='256' rx='30'/%3E%3Crect fill='%23ffd43b' x='30' y='30' width='196' height='196' rx='20'/%3E%3Ccircle cx='100' cy='80' r='12' fill='%233776ab'/%3E%3Crect x='60' y='120' width='40' height='60' fill='%233776ab' rx='5'/%3E%3Crect x='120' y='100' width='60' height='80' fill='%233776ab' rx='5'/%3E%3Ccircle cx='180' cy='200' r='12' fill='%233776ab'/%3E%3C/svg%3E" alt="Python" style="width: 50px; height: 50px;">
+                </div>
                 <div>
                     <h3 style="margin: 0;">Projetos Python</h3>
                     <p>Desenvolvidos durante minha trajetória de aprendizado em programação</p>
@@ -608,7 +636,9 @@
         <section id="golang-projects">
             <h2>🔵 Projetos em Golang</h2>
             <div class="category-header">
-                <div class="category-icon">🔵</div>
+                <div class="category-icon">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect fill='%2300add8' width='256' height='256' rx='30'/%3E%3Ctext x='128' y='140' font-size='80' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3EGO%3C/text%3E%3C/svg%3E" alt="Golang" style="width: 50px; height: 50px;">
+                </div>
                 <div>
                     <h3 style="margin: 0;">Projetos Golang</h3>
                     <p>Explorando Go para desenvolvimento de sistemas eficientes</p>
@@ -664,11 +694,15 @@
             <h2>🛠️ Tecnologias e Ferramentas</h2>
             <div class="tech-stack">
                 <div class="tech-item">
-                    <div class="tech-item-icon">🐍</div>
+                    <div class="tech-item-icon">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect fill='%233776ab' width='256' height='256' rx='30'/%3E%3Crect fill='%23ffd43b' x='30' y='30' width='196' height='196' rx='20'/%3E%3Ccircle cx='100' cy='80' r='12' fill='%233776ab'/%3E%3Crect x='60' y='120' width='40' height='60' fill='%233776ab' rx='5'/%3E%3Crect x='120' y='100' width='60' height='80' fill='%233776ab' rx='5'/%3E%3Ccircle cx='180' cy='200' r='12' fill='%233776ab'/%3E%3C/svg%3E" alt="Python">
+                    </div>
                     <div class="tech-item-name">Python</div>
                 </div>
                 <div class="tech-item">
-                    <div class="tech-item-icon">🔵</div>
+                    <div class="tech-item-icon">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect fill='%2300add8' width='256' height='256' rx='30'/%3E%3Ctext x='128' y='140' font-size='80' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3EGO%3C/text%3E%3C/svg%3E" alt="Golang">
+                    </div>
                     <div class="tech-item-name">Golang</div>
                 </div>
                 <div class="tech-item">
