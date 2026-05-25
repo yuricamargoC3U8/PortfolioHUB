@@ -27,7 +27,7 @@ Projetos/
 
 ---
 
-## ![Python](./images/python%20logo.jpg) Projetos Python
+## <img src="./images/python%20logo.jpg" width="16" height="16"/> Projetos Python
 
 Todos os projetos em Python estão organizados em:
 
@@ -40,7 +40,7 @@ Incluem:
 
 ---
 
-## ![Golang](./images/golang%20maskot.png) Projetos Golang
+## <img src="./images/golang%20maskot.png" width="16" height="16"/> Projetos Golang
 
 Todos os projetos em Go estão organizados em:
 
@@ -50,9 +50,9 @@ Todos os projetos em Go estão organizados em:
 
 ## 💻 Tecnologias Utilizadas
 
-- **![Python](./images/python%20logo.jpg) Python** - Linguagem principal (47.5% do repositório)
-- **HTML** - Markup e páginas web (51.4%)
-- **![Golang](./images/golang%20maskot.png) Go (Golang)** - Programação de sistemas (1.1%)
+- **<img src="./images/python%20logo.jpg" width="16" height="16"/> Python** - Linguagem principal (48.9% do repositório)
+- **HTML** - Markup e páginas web (50%)
+- **<img src="./images/golang%20maskot.png" width="16" height="16"/> Go (Golang)** - Programação de sistemas (1.1%)
 - **Git & GitHub** - Controle de versão
 - **GitHub Pages** - Hospedagem do portfólio
 
