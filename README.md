@@ -6,7 +6,7 @@ Repositório onde eu armazeno meus projetos escolares e pessoais, organizados po
 
 ## 📋 Sobre
 
-Este repositório contém uma coleção organizada de meus projetos acadêmicos e pessoais. Os projetos estão divididos em categorias por linguagem, facilitando a navegação e compreensão da evolução do meu aprendizado em programação.
+Este repositório contém uma coleção organizada de meus projetos acadêmicos e pessoais. Os projetos estão divididos em categorias por linguagem, facilitando a navegação e compreensão da evolução do meu aprendizado.
 
 ---
 
@@ -26,7 +26,7 @@ Projetos/
 
 ---
 
-## 🐍 Projetos Python
+## ![Python](https://raw.githubusercontent.com/yuricamargoC3U8/Projetos/main/images/python-logo.png) Projetos Python
 
 Todos os projetos em Python estão organizados em:
 
@@ -39,7 +39,7 @@ Incluem:
 
 ---
 
-## 🔵 Projetos Golang
+## ![Golang](https://raw.githubusercontent.com/yuricamargoC3U8/Projetos/main/images/golang-logo.png) Projetos Golang
 
 Todos os projetos em Go estão organizados em:
 
@@ -49,9 +49,9 @@ Todos os projetos em Go estão organizados em:
 
 ## 💻 Tecnologias Utilizadas
 
-- **Python** - Linguagem principal (57.3% do repositório)
+- **![Python](https://raw.githubusercontent.com/yuricamargoC3U8/Projetos/main/images/python-logo.png) Python** - Linguagem principal (57.3% do repositório)
 - **HTML** - Markup e páginas web (41.4%)
-- **Go (Golang)** - Programação de sistemas (1.3%)
+- **![Golang](https://raw.githubusercontent.com/yuricamargoC3U8/Projetos/main/images/golang-logo.png) Go (Golang)** - Programação de sistemas (1.3%)
 - **Git & GitHub** - Controle de versão
 - **GitHub Pages** - Hospedagem do portfólio
 
