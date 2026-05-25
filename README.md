@@ -6,7 +6,7 @@ Repositório onde eu armazeno meus projetos escolares e pessoais, organizados po
 
 ## 📋 Sobre
 
-Este repositório contém uma coleção organizada de meus projetos acadêmicos e pessoais. Os projetos estão divididos em categorias por linguagem, facilitando a navegação e compreensão da evolução do meu aprendizado.
+Este repositório contém uma coleção organizada de meus projetos acadêmicos e pessoais. Os projetos estão divididos em categorias por linguagem, facilitando a navegação e compreensão da evolução do meu aprendizado em programação.
 
 ---
 
@@ -19,6 +19,7 @@ Projetos/
 │   ├── Golang Projects/        # Projetos em Go
 │   └── .gitkeep
 ├── docs/                       # Documentação adicional
+├── images/                     # Imagens do portfólio
 ├── README.md                   # Este arquivo
 ├── LICENSE                     # Licença MIT
 └── index.html                  # Página inicial do portfólio
@@ -26,7 +27,7 @@ Projetos/
 
 ---
 
-## ![Python](https://raw.githubusercontent.com/yuricamargoC3U8/Projetos/main/images/python-logo.png) Projetos Python
+## ![Python](./images/python%20logo.jpg) Projetos Python
 
 Todos os projetos em Python estão organizados em:
 
@@ -39,7 +40,7 @@ Incluem:
 
 ---
 
-## ![Golang](https://raw.githubusercontent.com/yuricamargoC3U8/Projetos/main/images/golang-logo.png) Projetos Golang
+## ![Golang](./images/golang%20maskot.png) Projetos Golang
 
 Todos os projetos em Go estão organizados em:
 
@@ -49,9 +50,9 @@ Todos os projetos em Go estão organizados em:
 
 ## 💻 Tecnologias Utilizadas
 
-- **![Python](https://raw.githubusercontent.com/yuricamargoC3U8/Projetos/main/images/python-logo.png) Python** - Linguagem principal (57.3% do repositório)
-- **HTML** - Markup e páginas web (41.4%)
-- **![Golang](https://raw.githubusercontent.com/yuricamargoC3U8/Projetos/main/images/golang-logo.png) Go (Golang)** - Programação de sistemas (1.3%)
+- **![Python](./images/python%20logo.jpg) Python** - Linguagem principal (47.5% do repositório)
+- **HTML** - Markup e páginas web (51.4%)
+- **![Golang](./images/golang%20maskot.png) Go (Golang)** - Programação de sistemas (1.1%)
 - **Git & GitHub** - Controle de versão
 - **GitHub Pages** - Hospedagem do portfólio
 
