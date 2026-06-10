@@ -1,0 +1,40 @@
+1. Desenvolva um programa que leia o peso de sessenta pessoas digitado pelo usuário e gere a tela de saída mostrando as
+seguintes informações estatísticas:
+a) Média aritmética do peso das pessoas
+b) Peso da pessoa mais magra
+c) Quantidade de pessoas com cinquenta quilos ou mais.
+
+- Fórmula média aritmética = ___soma___
+                             quantidade
+obs: Use estrutura de repetição (loop - laço) com variável de controle for, SEM LISTA.
+
+---- ALTERAÇÕES ----
+a. Encontrar o peso da pessoa mais gorda
+b. A média de peso das pessoas com 50kg ou mais.
+
+
+2.Implemente um programa com a função (def) e a função principal (main):
+-   A função (def) recebe dois parâmetros (a base e a altura), calcula a área do triângulo e retorna o resultado
+do cálculo (valor da área).
+
+Formula: área = __base__x__altura__
+                        2
+- A função principal(main) lê os valores da base e da altura digitados pelo usuário, chama a função passando os argumentos
+(os dois valores digitados) e mostra o valor retornado pela função, ou seja, a área calculada.
+
+---- ALTERAÇÕES ----
+a.refaça a função (def) sem usar a variavel area
+b. refaça a função main sem usar a variavel valor_retorno
+c. Faça mais uma função, a função para calcular a area de um circulo
+    Formula: area = pi * raio ao quadrado
+d. No main, leia o valor do raio, chame a função e mostre o resultado.
+
+
+3.Utilize as funções de lista para implementar os itens a seguir e exiba na tela a informações solicitadas:
+
+a. Crie uma lista vazia e use uma estrutura de repetição para armazenas na lista vários valores inteiros digitados pelo usuário.
+Mas, não sabemos a quantidade de valores digitados.
+b. Mostre o maior valor da lista.
+c. Calcule e mostre a média aritmética dos valores na lista
+d. Atualize (substituia) o valor armazenado no índice 2 pelo valor 77.
+e. Peça para o usuário digitar um valor (número) para remover na lista.
